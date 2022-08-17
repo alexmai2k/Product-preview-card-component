@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Fraunces">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Fraunces">
   <title>Frontend Mentor | Product preview card component</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -66,7 +66,10 @@
     }
 
     .product-photo {
-      background: #cccccc url("./images/image-product-mobile.jpg") center center no-repeat;
+      background-color: #cccccc;
+      background-image: url("./images/image-product-mobile.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
       background-size: cover;
       width: 100%;
       min-height: 280px;
@@ -114,7 +117,7 @@
     }
 
     i {
-      background: url("./images/icon-cart.svg") center center no-repeat;
+      background: url("./images/icon-cart.svg");
       height: 16px;
       width: 15px;
       margin-right: 0.75rem;
@@ -122,7 +125,7 @@
 
     .btn {
       display: flex;
-      flex-direction: row nowrap;
+      flex-flow: row nowrap;
       justify-content: center;
       align-items: center;
       background-color: var(--primary-color);
@@ -144,12 +147,12 @@
 
     @media (min-width:980px) {
       .product-card-wrapper {
-        width: 676px;
+        width: 768px;
         grid-template-columns: 1fr 1fr;
       }
 
       .product-photo {
-        background: #cccccc url("./images/image-product-desktop.jpg") center center no-repeat;
+        background-image: url("./images/image-product-desktop.jpg");
         min-height: 480px;
         border-bottom-left-radius: var(--border-radius);
         border-top-left-radius: var(--border-radius);
